@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import MovieView from '../views/MovieView.vue'
+import VideoView from '../views/VideoView.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'MovieView',
+    component: MovieView
+  },
+  {
+    path: '/video',
+    name: 'VideoView',
+    component: VideoView
   },
 ]
 
