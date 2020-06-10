@@ -10,9 +10,9 @@
             </button>
           </div>
           <div class="modal-body">
-            <img :src="movie.backdrop_url" class="img-fluid" alt='backdrop'>
+            <img :src="backdropURL" class="img-fluid" alt='backdrop'>
             <hr>
-            <span class="badge badge-info mb-3">{{ movie.user_rating }}</span>
+            <p class="badge badge-light d-flex justify-content-center mb-3 p-2">⭐️ {{ movie.user_rating + ' / 10' }}</p>
             <p>{{ movie.overview }}</p>
           </div>
           <div class="modal-footer">
@@ -32,8 +32,8 @@ export default {
     movie: Object
   },
   computed: {
-    posterURL() {
-      return this.movie.poster_url
+    backdropURL() {
+      return this.movie.backdrop_url
     }
   },
 }

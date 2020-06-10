@@ -1,8 +1,8 @@
 <template>
-  <div class="movieListItem col-3">
+  <div class="movieListItem col-sm-12 col-md-4">
     <div class="card text-center p-2" width="100%">
       <p class="card-title text-secondary">- {{ movie.title }} -</p>
-      <img :src="movie.poster_url" class="card-img-top" :alt="movie.title">
+      <img :src="posterURL" class="card-img-top" :alt="movie.title">
       <div class="card-body">
         <button class="btn btn-info" data-toggle="modal" :data-target="'#movie'+movie.id">영화 상세보기</button>
       </div>

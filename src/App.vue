@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="back">
-    <nav class="navbar navbar-expand-lg p-5">
+    <nav class="navbar navbar-expand-lg sticky-top p-5">
       <div class="navbar" style="position: absolute; left: 50%; transform: translateX(-50%);">
         <router-link to="/" class="text-info text-decoration-none pt-5"><strong>Vue-tube</strong></router-link>
       </div>
@@ -28,11 +28,11 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .back {
-  height: 340vh;
+  min-height: 100vh;
   background: black;
 }
 
