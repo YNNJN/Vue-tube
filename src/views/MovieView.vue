@@ -5,7 +5,7 @@
       <button v-if="showButton" @click="getMovieData" class="btn btn-info text-white"><strong>영화 가져오기</strong></button>
     </div>
     <MovieList :movies="movies"/>
-    
+    <button v-if="movies.length > 0" @click="scrollToTop" class="button-bottom btn btn-outline-info">Top</button>
   </div>
 </template>
 
@@ -36,7 +36,17 @@ export default {
       .catch(err => {
         console.log(err)
       })
-    }
+    },
+    scrollToTop: function () {
+      scroll(0,0)
+    },
   }
 }
 </script>
+<style>
+.button-bottom {
+  position: fixed;
+  right: 5vw;
+  bottom: 3vh;
+}
+</style>

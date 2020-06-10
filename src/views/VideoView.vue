@@ -5,6 +5,7 @@
     <div class="d-flex justify-content-center">
       <VideoItem :videos="videos"/>
     </div>
+    <button v-if="videos.length > 0" @click="scrollToTop" class="button-bottom btn btn-outline-info">Top</button>
   </div>
 </template>
 
@@ -42,8 +43,10 @@ export default {
       })
       .then(res => this.videos = res.data.items)
       .catch(err => console.error(err))
-        
-    }
+    },
+    scrollToTop: function () {
+      scroll(0,0)
+    },
   },
 }
 </script>
@@ -53,6 +56,12 @@ export default {
     margin: 20px;
     width: 40%;
     margin: 0 auto;
-    
 }
+
+.button-bottom {
+  position: fixed;
+  right: 5vw;
+  bottom: 3vh;
+}
+
 </style>
