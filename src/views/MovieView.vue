@@ -13,7 +13,7 @@
 import axios from 'axios'
 import MovieList from '@/components/MovieList.vue'
 
-const MOVIE_API_URL = 'http://www.json-generator.com/api/json/get/ceNyuXZmwi?indent=2'
+const MOVIE_API_URL = 'https://www.json-generator.com/api/json/get/ceNyuXZmwi?indent=2'
 export default {
   name: 'MovieView',
   components: {

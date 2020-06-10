@@ -20,7 +20,7 @@ export default {
   computed: {
     videoUrl() {
       const videoId = this.video.id.videoId
-      return `http://youtube.com/embed/${videoId}?&amp;vq=hd1080`
+      return `https://youtube.com/embed/${videoId}?&amp;vq=hd1080`
     }
   },
   methods: {
