@@ -15,7 +15,6 @@
   - Vue 2.6.11
   - Vue CLI 4.4.0
 
-<br>
 - 서비스 배포 환경
   - Netlify (https://vue-tuube.netlify.app/)
 
